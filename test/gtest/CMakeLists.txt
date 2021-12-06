@@ -27,6 +27,3 @@ if (MSVC)
   endif ()
 endif ()
 
-# Silence MSVC tr1 deprecation warning in gmock.
-target_compile_definitions(gtest
-  PUBLIC _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING=1)
